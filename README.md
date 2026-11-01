@@ -14,15 +14,15 @@ that never appear in training, so it measures how well a model handles novel att
 | Metric | Value |
 |---|---|
 | Precision | 96.9% |
-| Accuracy | 79.7% |
-| ROC-AUC | 0.971 |
-| False alarm rate | 2.9% |
+| Accuracy | 79.0% |
+| ROC-AUC | 0.967 |
+| False alarm rate | 2.8% |
 
-Five-class model: detects 84% of DoS and 65% of Probe attacks. R2L and U2R remain weak
+Five-class model: detects 84% of DoS and 64.4% of Probe attacks. R2L and U2R remain weak
 because they have very few training examples and resemble normal behavior.
 
 ## Key finding
-Cross-validation F1 was 99.9%, but test F1 was 78.8%. Random cross-validation only measures
+Cross-validation F1 was 99.9%, but test F1 was 78%. Random cross-validation only measures
 performance on attack types already seen in training, so it overestimates real-world
 performance when new attacks appear (distribution shift).
 
